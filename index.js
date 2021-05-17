@@ -1,6 +1,6 @@
 var chars = "";
 var length = 12;
-var randomString = [];
+var randomString;
 
 function uppercase()
 {
@@ -36,6 +36,8 @@ function passwordContains()
 
 function generatePassword()
 {
+    randomString = [];
+
     passwordContains();
     for (var i = 0; i < length; i++)
     {
