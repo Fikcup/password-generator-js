@@ -17,8 +17,8 @@
         <div>
             <h1 class="settings">Customize your password</h1>
 
-            <output for="passwordLen"></output>
-            <input type="range" id="passwordLen" value="passwordLength" min="12" max="128"><br />
+            <input type="range" id="passwordLen" value="passwordLength" min="12" max="128" oninput="this.nextElementSibling.value = this.value">
+            <output for="passwordLen"></output><br />
 
             <input type="checkbox" id="uppercase">
             <label for="uppercase">Uppercase</label><br />
@@ -32,7 +32,11 @@
             <input type="checkbox" id="numbers">
             <label for="numbers">Numbers</label><br />
         </div>
-    </form>>
+
+        <div>
+            <input type="button" id="submit" value="submit">
+        </div>
+    </form>
 
     <script src="index.js"></script>
     <footer>

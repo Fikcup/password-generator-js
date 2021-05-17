@@ -53,4 +53,4 @@ function generatePassword()
     return randomString;
 }
 
-document.getElementById("submit").addEventListener("click", generatePassword());
+document.getElementById("submit").addEventListener("click", function() { generatePassword() });
