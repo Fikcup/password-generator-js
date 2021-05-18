@@ -4,26 +4,39 @@ var randomString;
 
 function uppercase()
 {
-    chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    console.log(chars);
+    if (document.getElementById('uppercase').checked) 
+    {
+        chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    }
 }
 
 function lowercase()
 {
-    chars += "abcdefghijklmnopqrstuvwxyz";
-    console.log(chars);
+    if (document.getElementById('lowercase').checked)
+    {
+        chars += "abcdefghijklmnopqrstuvwxyz";
+    }
 }
 
 function numbers()
 {
-    chars += "0123456789";
-    console.log(chars);
+    if (document.getElementById('numbers').checked)
+    {
+        chars += "0123456789";
+    }
 }
 
 function symbols()
 {
-    chars += "!@#$%^&*()-_+=/?[]:;";
-    console.log(chars);
+    if (document.getElementById('symbols').checked)
+    {
+        chars += "!@#$%^&*()-_+=/?[]:;";
+    }
+}
+
+function passwordLen()
+{
+    length = document.getElementById('passwordLen').value;
 }
 
 function passwordContains()
@@ -38,8 +51,9 @@ function generatePassword()
 {
     randomString = [];
 
+    passwordLen();
     passwordContains();
-    for (var i = 0; i < length; i++)
+    for (var i = 0; i < (length + 1); i++)
     {
         randomString.push(chars.charAt(Math.floor(Math.random() * chars.length)))
     }
@@ -52,6 +66,8 @@ function generatePassword()
     }
 
     displayPassword();
+    chars = "";
+    console.log(randomString);
     return randomString;
 }
 

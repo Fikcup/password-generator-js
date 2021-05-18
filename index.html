@@ -4,10 +4,10 @@
 
     </header>
     <form>
-        <div>
+        <div id="titleDesc">
             <h1 id="title">Password Generator tool</h1>
             <h2>Generate a Secure Password</h2>
-            <h3>Use our online password generator to instantly create a secure, random password.</h3>
+            <h3 id="desc">Use our online password generator to instantly create a secure, random password.</h3>
         </div>
 
         <div id="passwordDiv">
@@ -18,7 +18,7 @@
             <h1 class="settings">Customize your password</h1>
 
             <input type="range" id="passwordLen" value="passwordLength" min="12" max="128" oninput="this.nextElementSibling.value = this.value">
-            <output for="passwordLen"></output><br />
+            <output for="passwordLen" id="lenOutput"></output><br />
 
             <input type="checkbox" id="uppercase">
             <label for="uppercase">Uppercase</label><br />
@@ -27,7 +27,7 @@
             <label for="lowercase">Lowercase</label><br />
 
             <input type="checkbox" id="symbols">
-            <label for="symbols">Symnols</label><br />
+            <label for="symbols">Symbols</label><br />
 
             <input type="checkbox" id="numbers">
             <label for="numbers">Numbers</label><br />
