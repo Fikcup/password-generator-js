@@ -1,0 +1,53 @@
+body
+{
+    margin-top: 5rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+}
+
+#title
+{
+    font-size: 20px;
+    color: red;
+}
+
+#titleDesc h2
+{
+    font-size: 55px;
+}
+
+#titleDesc h3
+{
+    font-size: 25px;
+    color: red;
+}
+
+#passwordDiv
+{
+    padding: 1rem;
+    background-color: #f0f0f5;
+    word-wrap: break-word;
+}
+
+#passwordDiv p
+{
+    font-size: 25px;
+}
+
+#sliderDiv
+{
+    padding: 1rem;
+}
+
+#lenLabel
+{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#inputTags
+{
+    padding: 1rem;
+}
