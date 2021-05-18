@@ -64,7 +64,7 @@ function generatePassword()
     var output = document.getElementById('generatedPassword')
     function displayPassword()
     {
-        output.innerHTML = randomString.value;
+        output.innerHTML = randomString;
     }
 
     displayPassword();
