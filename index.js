@@ -2,6 +2,8 @@ var chars = "";
 var length = 12;
 var randomString;
 
+document.getElementById('generatedPassword').innerHTML = "Password";
+
 function uppercase()
 {
     if (document.getElementById('uppercase').checked) 
@@ -53,7 +55,7 @@ function generatePassword()
 
     passwordLen();
     passwordContains();
-    for (var i = 0; i < (length + 1); i++)
+    for (var i = 0; i < length; i++)
     {
         randomString.push(chars.charAt(Math.floor(Math.random() * chars.length)))
     }
