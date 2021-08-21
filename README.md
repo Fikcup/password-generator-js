@@ -13,7 +13,7 @@
 ## About The Project
 
 ![Password Generator Screenshot](https://media.discordapp.net/attachments/709223136402341959/844330268156493834/unknown.png?width=1248&height=676)
-Project Link: [Password Generator](https://github.com/Fikcup/password-generator-js)
+Project Link: [Password Generator](https://fikcup.github.io/password-generator-js/)
 
 ### Built With
 
