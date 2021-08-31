@@ -1,5 +1,5 @@
-body
-{
+/* Universal Selectors */
+body {
     margin-top: 5rem;
     margin-left: 25%;
     margin-right: 25%;
@@ -7,47 +7,50 @@ body
     font-family: 'KoHo', sans-serif;
 }
 
-#title
-{
+/* Title Selectors */
+#title {
     font-size: 20px;
     color: red;
 }
 
-#titleDesc h2
-{
+#titleDesc h2 {
     font-size: 55px;
 }
 
-#titleDesc h3
-{
+#titleDesc h3 {
     font-size: 25px;
     color: red;
 }
 
-#passwordDiv
-{
+/* Password Output Selectors */
+#passwordDiv {
     padding: 1rem;
     background-color: #f0f0f5;
     word-wrap: break-word;
 }
 
-#passwordDiv p
-{
+#passwordDiv p {
     font-size: 25px;
 }
 
-#sliderDiv
-{
+/* Password Length Slider Selectors */
+#sliderDiv {
     padding: 1rem;
 }
 
-#lenLabel
-{
+#lenLabel {
     font-size: 20px;
     margin-right: 20px;
 }
 
-#inputTags
-{
+/* Password Character Selectors */
+#inputTags {
     padding: 1rem;
+}
+
+/* Submit Button Selectors */
+#submit {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f5;
 }
