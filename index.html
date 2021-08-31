@@ -1,31 +1,38 @@
 <!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Password Generator</title>
+</head>
+
 <body>
-    <header>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/index.css">
-    </header>
     <form>
-        <div id="titleDesc">
+        <!-- Main Header -->
+        <header id="titleDesc">
             <h1 id="title">Password Generator Tool</h1>
             <h2>Generate a Secure Password</h2>
             <h3 id="desc">Use our online password generator to instantly create a secure, random password.</h3>
-        </div>
+        </header>
 
-        <div id="passwordDiv">
+        <!-- Generated Password Output -->
+        <section id="passwordDiv">
             <p id="generatedPassword"></p>
-        </div>
+        </section>
 
-        <div>
+        <!-- Password Settings -->
+        <section>
             <h1 class="settings">Customize your password</h1>
 
-            <div id="sliderDiv">
+            <!-- Password Length Slider -->
+            <article id="sliderDiv">
                 <label for="passwordLen" id="lenLabel">Password Length: </label>
                 <input type="range" id="passwordLen" value="passwordLength" min="12" max="128" oninput="this.nextElementSibling.value = this.value">
                 <output for="passwordLen" id="lenOutput"></output><br />
-            </div>
+            </article>
 
-            <div id="inputTags">
+            <!-- Character Settings -->
+            <article id="inputTags">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase">Uppercase</label>
 
@@ -37,12 +44,13 @@
 
                 <input type="checkbox" id="numbers">
                 <label for="numbers">Numbers</label>
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div>
+        <!-- Generate Button -->
+        <section>
             <input type="button" id="submit" value="Submit">
-        </div>
+        </section>
     </form>
 
     <script src="./assets/js/index.js"></script>
