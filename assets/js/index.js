@@ -4,53 +4,45 @@ var randomString;
 
 document.getElementById('generatedPassword').innerHTML = "Password";
 
-function uppercase()
-{
-    if (document.getElementById('uppercase').checked) 
-    {
+function uppercase() {
+    if (document.getElementById('uppercase').checked) {
         chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
 }
 
 function lowercase()
 {
-    if (document.getElementById('lowercase').checked)
-    {
+    if (document.getElementById('lowercase').checked) {
         chars += "abcdefghijklmnopqrstuvwxyz";
     }
 }
 
 function numbers()
 {
-    if (document.getElementById('numbers').checked)
-    {
+    if (document.getElementById('numbers').checked) {
         chars += "0123456789";
     }
 }
 
 function symbols()
 {
-    if (document.getElementById('symbols').checked)
-    {
+    if (document.getElementById('symbols').checked) {
         chars += "!@#$%^&*()-_+=/?[]:;";
     }
 }
 
-function passwordLen()
-{
+function passwordLen() {
     length = document.getElementById('passwordLen').value;
 }
 
-function passwordContains()
-{
+function passwordContains() {
     document.getElementById("uppercase").addEventListener("click", uppercase());
     document.getElementById("lowercase").addEventListener("click", lowercase());
     document.getElementById("numbers").addEventListener("click", numbers());
     document.getElementById("symbols").addEventListener("click", symbols())
 }
 
-function generatePassword()
-{
+function generatePassword() {
     randomString = [];
 
     passwordLen();
