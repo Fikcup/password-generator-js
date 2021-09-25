@@ -5,15 +5,14 @@ var randomString;
 document.getElementById('generatedPassword').innerHTML = "Password";
 
 // Evaluates uppercase check
-function uppercase() {
+const uppercase = () => {
     if (document.getElementById('uppercase').checked) {
         chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
 }
 
 // Evaluates lowercase check
-function lowercase()
-{
+const lowercase = () => {
     if (document.getElementById('lowercase').checked) {
         chars += "abcdefghijklmnopqrstuvwxyz";
     }
@@ -21,28 +20,26 @@ function lowercase()
 
 
 // Evaluates number check
-function numbers()
-{
+const numbers = () => {
     if (document.getElementById('numbers').checked) {
         chars += "0123456789";
     }
 }
 
 // Evaluates symbol check
-function symbols()
-{
+const symbols = () => {
     if (document.getElementById('symbols').checked) {
         chars += "!@#$%^&*()-_+=/?[]:;";
     }
 }
 
 // Evaluates password length slider
-function passwordLen() {
+const passwordLen = () => {
     length = document.getElementById('passwordLen').value;
 }
 
 // Adds event listeners to execute functions
-function passwordContains() {
+const passwordContains = () => {
     document.getElementById("uppercase").addEventListener("click", uppercase());
     document.getElementById("lowercase").addEventListener("click", lowercase());
     document.getElementById("numbers").addEventListener("click", numbers());
@@ -50,7 +47,7 @@ function passwordContains() {
 }
 
 // Generates password
-function generatePassword() {
+const generatePassword = () => {
     // Resets chars and randomString
     function reset() {
         chars = "";
@@ -71,7 +68,7 @@ function generatePassword() {
 
     // Outputs password to the screen
     var output = document.getElementById('generatedPassword')
-    function displayPassword() {
+    const displayPassword = () => {
         output.innerHTML = randomString;
         reset();
     }
@@ -79,4 +76,4 @@ function generatePassword() {
 }
 
 // Add event listener to execute generatePassword
-document.getElementById("submit").addEventListener("click", function() { generatePassword() });
+document.getElementById("submit").addEventListener("click", function () {generatePassword()});
